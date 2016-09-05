@@ -58,19 +58,18 @@ Conteudo:
 - data
   - Tipo: JSON
   - Obrigatorio
+    Conteudo:
+        - day
+            - Tipo: inteiro
+            - Tamanho: 2
+            - Obrigatorio
+        - values:
+            - Tipo: JSON
+            - Obrigatorio
 
-[Data] - Conteudo:
-- day
-    - Tipo: inteiro
-    - Tamanho: 2
-    - Obrigatorio
-- values:
-    - Tipo: JSON
-    - 
 
-
-  Exemplo:
-  ```
+            Exemplo:
+            ```
   "months" : [ {
     "month" : 1,
     "data" : [ {
@@ -95,4 +94,4 @@ Conteudo:
     } ]
   } ]
 }
-```
+          ```
