@@ -53,11 +53,21 @@ Exemplo:
 Conteudo:
 - month
   - Tipo: inteiro
+  - Tamanho: 2
   - Obrigatorio
 - data
   - Tipo: JSON
   - Obrigatorio
-   Conteudo:
+
+[Data] - Conteudo:
+- day
+    - Tipo: inteiro
+    - Tamanho: 2
+    - Obrigatorio
+- values:
+    - Tipo: JSON
+    - 
+
 
   Exemplo:
   ```
