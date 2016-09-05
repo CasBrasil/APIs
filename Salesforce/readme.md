@@ -7,7 +7,7 @@ Essa documentação visa auxiliar na configuração válida dos arquivos para en
 ## Parametros
 
 ### token
-** Chave individual do CNPJ para conexão com as ferramentas da CasBrasil **
+**Chave individual do CNPJ para conexão com as ferramentas da CasBrasil**
 - Tipo: Varchar
 - Tamanho: 256
 - Obrigatorio
@@ -19,11 +19,48 @@ ewogICJ0b2tlbiIgOiAicXV3aWhlaW91c2Rob2lhdXNncnl1d3FnZXJ1b3lxd2dleXVxd2dydXlxd2dy
 ```
 
 ### app_id
+**Chave de identificação do arquivo**
+- Tipo: Varchar
+- Tamanho: fixo 6
+- Obrigatorio
+##### valor fixo para esse arquivo: 000014,
 
-### valor fixo para esse arquivo:
-#### 000014,
-  "cnpj" : "27505087000105",
-  "year" : "2016",
+### cnpj
+**Chave de identificação da loja**
+- Tipo: Varchar
+- Tamanho: fixo 14
+- Obrigatorio
+
+Exemplo:
+```
+"27505087000105"
+```
+### year
+**Ano do conteudo**
+- Tipo: inteiro
+- Tamanho: fixo 4
+- Obrigatorio
+
+Exemplo:
+```
+"2016"
+```
+### months
+**Array com json**
+- Tipo: JSON
+- Obrigatorio
+
+Conteudo:
+- month
+  - Tipo: inteiro
+  - Obrigatorio
+- data
+  - Tipo: JSON
+  - Obrigatorio
+   Conteudo:
+
+  Exemplo:
+  ```
   "months" : [ {
     "month" : 1,
     "data" : [ {
@@ -48,3 +85,4 @@ ewogICJ0b2tlbiIgOiAicXV3aWhlaW91c2Rob2lhdXNncnl1d3FnZXJ1b3lxd2dleXVxd2dydXlxd2dy
     } ]
   } ]
 }
+```
