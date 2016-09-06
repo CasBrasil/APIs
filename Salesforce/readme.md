@@ -208,7 +208,7 @@ Exemplo:
 - Obrigatorio
 
 
-Exemplo:
+Estrutura [months]:
 ```
 "months" : [ {
   "month" : 1,
