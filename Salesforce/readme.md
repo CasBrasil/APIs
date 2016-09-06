@@ -7,7 +7,8 @@ Essa documentação visa auxiliar na configuração válida dos arquivos para en
 ## Parametros
 
 ### 1 token
-**Chave individual do CNPJ para conexão com as ferramentas da CasBrasil**
+> Chave individual do CNPJ para conexão com as ferramentas da CasBrasil
+
 - Tipo: Varchar
 - Tamanho: 256
 - Obrigatorio
@@ -54,7 +55,7 @@ Exemplo:
 
 #### 5.1 months -> month
 > Esse elemento faz parte do elemento "months"
-Mes de referencia do conteudo contido no elemento 5.2
+> Mes de referencia do conteudo contido no elemento 5.2
 
 - Tipo: inteiro
 - Tamanho: 2
@@ -62,14 +63,14 @@ Mes de referencia do conteudo contido no elemento 5.2
 
 #### 5.2 months -> data  
 > Esse elemento faz parte do elemento "months"
-Contem as vendas do mes
+> Contem as vendas do mes
 
 - Tipo: JSON
 - Obrigatorio
 
 #### 5.2.1 months -> data -> day
 > Esse elemento faz parte do elemento "data"
-Dia de referencia do conteudo contido no elemento 5.2.2
+> Dia de referencia do conteudo contido no elemento 5.2.2
 
 - Tipo: inteiro
 - Tamanho: 2
@@ -77,21 +78,21 @@ Dia de referencia do conteudo contido no elemento 5.2.2
 
 ####   5.2.2 months -> data -> values
 > Esse elemento faz parte do elemento "data"
-Contem as vendas do dia totalizadas por produto e vendedor
+> Contem as vendas do dia totalizadas por produto e vendedor
 
 - Tipo: JSON
 - Obrigatorio
 
 ####  5.2.2.1 months -> data -> values -> products
 > Esse elemento faz parte do elemento "values"
-Contem os produtos vendidos no dia*
+> Contem os produtos vendidos no dia*
 
 - Tipo: JSON
 - Obrigatorio
 
 ####     5.2.2.1.1 months -> data -> values -> products -> barcode
 > Esse elemento faz parte do elemento "products"
-Contem os produtos vendidos no dia
+> Contem os produtos vendidos no dia
 
 - Tipo: inteiro
 - Tamanho: 13
@@ -99,14 +100,14 @@ Contem os produtos vendidos no dia
 
 ####     5.2.2.1.1 months -> data -> values -> products -> employers
 > Esse elemento faz parte do elemento "products"
-Contem os vendedores que fizeram venda desse produto no dia
+> Contem os vendedores que fizeram venda desse produto no dia
 
 - Tipo: JSON
 - Obrigatorio
 
 ####       5.2.2.1.1.1 months -> data -> values -> products -> employers -> cpf
 > Esse elemento faz parte do elemento "employers"
-CPF do vendedor
+> CPF do vendedor
 
 - Tipo: inteiro
 - Tamanho: 11
@@ -114,35 +115,35 @@ CPF do vendedor
 
 ####       5.2.2.1.1.2 months -> data -> values -> products -> employers -> quantity
 > Esse elemento faz parte do elemento "employers"
-Quantidade vendida no dia pelo vendedor
+> Quantidade vendida no dia pelo vendedor
 
 - Tipo: inteiro
 - Obrigatorio
 
 ####       5.2.2.1.1.3 months -> data -> values -> products -> employers -> gross_value
 > Esse elemento faz parte do elemento "employers"
-Total de venda bruta do vendedor no dia
+> Total de venda bruta do vendedor no dia
 
 - Tipo: decimal
 - Obrigatorio
 
 ####       5.2.2.1.1.4 months -> data -> values -> products -> employers -> net_value
 > Esse elemento faz parte do elemento "employers"
-Total de venda liquida do vendedor no dia
+> Total de venda liquida do vendedor no dia
 
 - Tipo: decimal
 - Obrigatorio
 
 ####      5.2.2.1.2 months -> data -> values -> products -> tickets
 > Esse elemento faz parte do elemento "tickets"
-Contem dados de vendas por mes do vendedor
+> Contem dados de vendas por mes do vendedor
 
 - Tipo: JSON
 - Obrigatorio
 
 ####      5.2.2.1.2.1 months -> data -> values -> products -> tickets -> cpf
 > Esse elemento faz parte do elemento "tickets"
-CPF do vendedor
+> CPF do vendedor
 
 - Tipo: inteiro
 - Tamanho: 11
@@ -150,21 +151,21 @@ CPF do vendedor
 
 ####      5.2.2.1.2.2 months -> data -> values -> products -> tickets -> quantity
 > Esse elemento faz parte do elemento "tickets"
-Quantidade de vendas(tickets) do vendedor no mes
+> Quantidade de vendas(tickets) do vendedor no mes
 
 - Tipo: inteiro
 - Obrigatorio
 
 ####      5.2.2.1.2.3 months -> data -> values -> products -> tickets -> gross_value
 > Esse elemento faz parte do elemento "tickets"
-Total de venda bruta do vendedor no mes
+> Total de venda bruta do vendedor no mes
 
 - Tipo: decimal
 - Obrigatorio
 
 ####      5.2.2.1.2.4 months -> data -> values -> products -> tickets -> net_value
 > Esse elemento faz parte do elemento "tickets"
-Total de venda liquida do vendedor no mes
+> Total de venda liquida do vendedor no mes
 
 - Tipo: decimal
 - Obrigatorio
