@@ -6,7 +6,11 @@ Essa documentação visa auxiliar na configuração válida dos arquivos para en
 
 # RCB
 
-Parametro de envio dos dados de vendas
+Responsável pelo envio dos dados para a API de força de vendas, recebe como parâmetro um json (exemplo a baixo) contendo os campos descritos no RCB - Parametros.
+
+- Tipo: JSON
+- Método: POST
+- Endereço: pdev.casbrasil.com.br/pdev/api/v1.0/salesforce/rcb
 
 JSON:
 ```
@@ -43,6 +47,7 @@ JSON:
 
 
 ## RCB - Parametros
+
 ### 1 token
 > Chave individual do CNPJ para conexão com as ferramentas da CasBrasil
 
