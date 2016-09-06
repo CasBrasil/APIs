@@ -19,14 +19,16 @@ ewogICJ0b2tlbiIgOiAicXV3aWhlaW91c2Rob2lhdXNncnl1d3FnZXJ1b3lxd2dleXVxd2dydXlxd2dy
 ```
 
 ### 2 app_id
-**Chave de identificação do arquivo**
+> Chave de identificação do arquivo
+
 - Tipo: Varchar
 - Tamanho: fixo 6
 - Obrigatorio
 ##### valor fixo para esse arquivo: 000014,
 
 ### 3 cnpj
-**Chave de identificação da loja**
+> Chave de identificação da loja
+
 - Tipo: Varchar
 - Tamanho: fixo 14
 - Obrigatorio
@@ -36,7 +38,8 @@ Exemplo:
 "27505087000105"
 ```
 ### 4 year
-**Ano do conteudo**
+> Ano do conteudo
+
 - Tipo: inteiro
 - Tamanho: fixo 4
 - Obrigatorio
@@ -50,103 +53,119 @@ Exemplo:
 - Obrigatorio
 
 #### 5.1 months -> month
-**Esse elemento faz parte do elemento "months"
-Mes de referencia do conteudo contido no elemento 5.2**
+> Esse elemento faz parte do elemento "months"
+Mes de referencia do conteudo contido no elemento 5.2
+
 - Tipo: inteiro
 - Tamanho: 2
 - Obrigatorio
 
 #### 5.2 months -> data  
-**Esse elemento faz parte do elemento "months"
-Contem as vendas do mes**
+> Esse elemento faz parte do elemento "months"
+Contem as vendas do mes
+
 - Tipo: JSON
 - Obrigatorio
 
 #### 5.2.1 months -> data -> day
-**Esse elemento faz parte do elemento "data"
-Dia de referencia do conteudo contido no elemento 5.2.2**
+> Esse elemento faz parte do elemento "data"
+Dia de referencia do conteudo contido no elemento 5.2.2
+
 - Tipo: inteiro
 - Tamanho: 2
 - Obrigatorio
 
 ####   5.2.2 months -> data -> values
-**Esse elemento faz parte do elemento "data"
-Contem as vendas do dia totalizadas por produto e vendedor**
+> Esse elemento faz parte do elemento "data"
+Contem as vendas do dia totalizadas por produto e vendedor
+
 - Tipo: JSON
 - Obrigatorio
 
 ####  5.2.2.1 months -> data -> values -> products
-**Esse elemento faz parte do elemento "values"
-Contem os produtos vendidos no dia**
+> Esse elemento faz parte do elemento "values"
+Contem os produtos vendidos no dia*
+
 - Tipo: JSON
 - Obrigatorio
 
 ####     5.2.2.1.1 months -> data -> values -> products -> barcode
-**Esse elemento faz parte do elemento "products"
-Contem os produtos vendidos no dia**
+> Esse elemento faz parte do elemento "products"
+Contem os produtos vendidos no dia
+
 - Tipo: inteiro
 - Tamanho: 13
 - Obrigatorio
 
 ####     5.2.2.1.1 months -> data -> values -> products -> employers
-**Esse elemento faz parte do elemento "products"
-Contem os vendedores que fizeram venda desse produto no dia**
+> Esse elemento faz parte do elemento "products"
+Contem os vendedores que fizeram venda desse produto no dia
+
 - Tipo: JSON
 - Obrigatorio
 
 ####       5.2.2.1.1.1 months -> data -> values -> products -> employers -> cpf
-**Esse elemento faz parte do elemento "employers"
-CPF do vendedor**
+> Esse elemento faz parte do elemento "employers"
+CPF do vendedor
+
 - Tipo: inteiro
 - Tamanho: 11
 - Obrigatorio
 
 ####       5.2.2.1.1.2 months -> data -> values -> products -> employers -> quantity
-**Esse elemento faz parte do elemento "employers"
-Quantidade vendida no dia pelo vendedor**
+> Esse elemento faz parte do elemento "employers"
+Quantidade vendida no dia pelo vendedor
+
 - Tipo: inteiro
 - Obrigatorio
 
 ####       5.2.2.1.1.3 months -> data -> values -> products -> employers -> gross_value
-**Esse elemento faz parte do elemento "employers"
-Total de venda bruta do vendedor no dia**
+> Esse elemento faz parte do elemento "employers"
+Total de venda bruta do vendedor no dia
+
 - Tipo: decimal
 - Obrigatorio
 
 ####       5.2.2.1.1.4 months -> data -> values -> products -> employers -> net_value
-**Esse elemento faz parte do elemento "employers"
-Total de venda liquida do vendedor no dia**
+> Esse elemento faz parte do elemento "employers"
+Total de venda liquida do vendedor no dia
+
 - Tipo: decimal
 - Obrigatorio
 
 ####      5.2.2.1.2 months -> data -> values -> products -> tickets
-**Esse elemento faz parte do elemento "tickets"
-Contem dados de vendas por mes do vendedor**
+> Esse elemento faz parte do elemento "tickets"
+Contem dados de vendas por mes do vendedor
+
 - Tipo: JSON
 - Obrigatorio
 
 ####      5.2.2.1.2.1 months -> data -> values -> products -> tickets -> cpf
-**Esse elemento faz parte do elemento "tickets"
-CPF do vendedor**
+> Esse elemento faz parte do elemento "tickets"
+CPF do vendedor
+
 - Tipo: inteiro
 - Tamanho: 11
 - Obrigatorio
 
 ####      5.2.2.1.2.2 months -> data -> values -> products -> tickets -> quantity
-**Esse elemento faz parte do elemento "tickets"
-Quantidade de vendas(tickets) do vendedor no mes**
+> Esse elemento faz parte do elemento "tickets"
+Quantidade de vendas(tickets) do vendedor no mes
+
 - Tipo: inteiro
 - Obrigatorio
 
 ####      5.2.2.1.2.3 months -> data -> values -> products -> tickets -> gross_value
-**Esse elemento faz parte do elemento "tickets"
-Total de venda bruta do vendedor no mes**
+> Esse elemento faz parte do elemento "tickets"
+Total de venda bruta do vendedor no mes
+
 - Tipo: decimal
 - Obrigatorio
 
 ####      5.2.2.1.2.4 months -> data -> values -> products -> tickets -> net_value
-**Esse elemento faz parte do elemento "tickets"
-Total de venda liquida do vendedor no mes**
+> Esse elemento faz parte do elemento "tickets"
+Total de venda liquida do vendedor no mes
+
 - Tipo: decimal
 - Obrigatorio
 
