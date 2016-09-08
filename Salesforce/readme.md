@@ -32,12 +32,12 @@ JSON:
             "gross_value" : 12132.0,
             "net_value" : 12121.0
           } ],
+          } ],
           "tickects" : [ {
             "cpf" : "1223242342",
             "quantity" : 30.0,
             "gross_value" : 12132.0,
-            "net_value" : 12121.0
-          } ]
+            "net_value" : 12121.0    
         } ]
       } ]
     } ]
@@ -176,14 +176,14 @@ Exemplo:
 - Tipo: decimal
 - Obrigatorio
 
-####      5.2.2.1.2 months -> data -> values -> products -> tickets
+####      5.2.2.2 months -> data -> values -> products -> tickets
 > Esse elemento faz parte do elemento "tickets"
 > Contem dados de vendas por mes do vendedor
 
 - Tipo: JSON
 - Obrigatorio
 
-####      5.2.2.1.2.1 months -> data -> values -> products -> tickets -> cpf
+####      5.2.2.2.1 months -> data -> values -> tickets -> cpf
 > Esse elemento faz parte do elemento "tickets"
 > CPF do vendedor
 
@@ -191,21 +191,21 @@ Exemplo:
 - Tamanho: 11
 - Obrigatorio
 
-####      5.2.2.1.2.2 months -> data -> values -> products -> tickets -> quantity
+####      5.2.2.2.2 months -> data -> values -> tickets -> quantity
 > Esse elemento faz parte do elemento "tickets"
 > Quantidade de vendas(tickets) do vendedor no mes
 
 - Tipo: inteiro
 - Obrigatorio
 
-####      5.2.2.1.2.3 months -> data -> values -> products -> tickets -> gross_value
+####      5.2.2.2.3 months -> data -> values -> tickets -> gross_value
 > Esse elemento faz parte do elemento "tickets"
 > Total de venda bruta do vendedor no mes
 
 - Tipo: decimal
 - Obrigatorio
 
-####      5.2.2.1.2.4 months -> data -> values -> products -> tickets -> net_value
+####      5.2.2.2.4 months -> data -> values -> tickets -> net_value
 > Esse elemento faz parte do elemento "tickets"
 > Total de venda liquida do vendedor no mes
 
@@ -228,12 +228,12 @@ Estrutura [months]:
           "gross_value" : 12132.0,
           "net_value" : 12121.0
         } ],
+        } ],
         "tickets" : [ {
           "cpf" : "1223242342",
           "quantity" : 30.0,
           "gross_value" : 12132.0,
           "net_value" : 12121.0
-          } ]
         } ]
       } ]
     } ]

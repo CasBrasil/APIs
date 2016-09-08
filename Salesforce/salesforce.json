@@ -16,12 +16,12 @@
             "gross_value" : 12132.0,
             "net_value" : 12121.0
           } ],
+          } ],
           "tickects" : [ {
             "cpf" : "1223242342",
             "quantity" : 30.0,
             "gross_value" : 12132.0,
             "net_value" : 12121.0
-          } ]
         } ]
       } ]
     } ]
